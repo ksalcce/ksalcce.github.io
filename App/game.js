@@ -56,7 +56,7 @@ let questions = [
 
 // constants
 
-const CORRECT_BONUS = 20;
+const CORRECT_BONUS = 1;
 const MAX_QUESTIONS = 5;
 
 startGame = () => {
