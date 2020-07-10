@@ -40,7 +40,7 @@ function renderAQuestion() {
       <fieldset>
         <div class="row question">
           <div class="col-12">
-            <legend> ${question.question}</legend>
+            <p> ${question.question}</p>
           </div>
         </div>
 
@@ -73,7 +73,7 @@ function displayResults() {
         <fieldset>
           <div class="row">
             <div class="col-12">
-              <legend>Your Score is: ${STORE.score} out of ${STORE.questions.length} !!! </legend>
+              <p>Your Score is: ${STORE.score} out of ${STORE.questions.length} !!! </p>
             </div>
            <p>
           </div>
