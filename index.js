@@ -7,7 +7,7 @@ function startQuiz() {
 
 
 function updateQuestionAndScore() {
- $(`<ul>
+const html= $(`<ul>
       <li id="js-answered">Questions Number: ${STORE.currentQuestion + 1}/${STORE.questions.length}</li>
       <li id="js-score">Score: ${STORE.score}/${STORE.questions.length}</li>
     </ul>`);
