@@ -6,12 +6,15 @@ function startQuiz() {
 }
 
 
+function generateHTMLContent() {
+    return `<ul>
+            <li id="js-answered">Questions Number: ${STORE.currentQuestion + 1}/${STORE.questions.length}</li>
+            <li id="js-score">Score: ${STORE.score}/${STORE.questions.length}</li>
+        </ul>`;
+}
+
 function updateQuestionAndScore() {
-const html= $(`<ul>
-      <li id="js-answered">Questions Number: ${STORE.currentQuestion + 1}/${STORE.questions.length}</li>
-      <li id="js-score">Score: ${STORE.score}/${STORE.questions.length}</li>
-    </ul>`);
-  $(".question-and-score").html(html);
+    $(".question-and-score").html(generateHTMLContent());
 }
 
 
